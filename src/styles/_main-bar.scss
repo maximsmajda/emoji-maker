@@ -1,0 +1,43 @@
+.main-bar {
+    width: 100%;
+    height: 20%;
+    background-color: $main-color;
+    color: $secondary-color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-bar-heading {
+    h1 {
+        font-size: 2.8rem;
+        margin: 0 3rem;
+    }
+}
+
+.main-bar-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 3rem;
+    position: relative;
+    
+
+    p, button {
+        margin-left: 1.4rem;
+        background: none;
+        font-size: 1.6rem;
+        color: $secondary-color;
+        border: none;
+        border-bottom: 0.2rem solid transparent;
+        font-family: 'Roboto Mono', monospace;
+        padding: 0;
+        cursor: pointer;
+    }
+
+    button {
+        border-bottom: 0.2rem solid $secondary-color;
+    }
+}
+
+

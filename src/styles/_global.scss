@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'Open Sans';
+    src: url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600&display=swap');
+}
+
+html, body, #root, .App {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+
+.App {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Roboto Mono', monospace;
+}
+
