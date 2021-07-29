@@ -2,11 +2,12 @@ import React, { useState, useEffect } from "react";
 
 function GroupBox(props) {
   const [hidden, setHidden] = useState(false);
-  const [height, setHeight] = useState(null);
+  const [elementHeight, setElementHeight] = useState(null);
 
-  useEffect(() => {
-    setHeight(getHeight(props.id));
-  }, [props.id]);
+
+  useEffect(() => { 
+    setElementHeight(getHeight(props.id))
+  }, [props.id])
 
   const getHeight = (id) => {
     const element = document.getElementById(id);
@@ -18,10 +19,15 @@ function GroupBox(props) {
     <div className="group-box">
       <div className="group-box-heading" onClick={() => setHidden(!hidden)}>
         <h3>{props.name}</h3>
+        {hidden ?
+        <p className="hide-text">click to open</p>
+        :
+        <p className="hide-text">click to hide</p>
+        }
       </div>
       <div
         id={props.id}
-        style={hidden ? { maxHeight: 0 } : { maxHeight: height }}
+        style={hidden ? { maxHeight: 0 } : { maxHeight: elementHeight }}
         className={hidden ? "group-box-content hidden" : "group-box-content"}
       >
         {props.children}

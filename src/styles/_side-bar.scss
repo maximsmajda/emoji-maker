@@ -2,6 +2,7 @@
     height: 80%;
     width: 30%;
     overflow: hidden;
+    z-index: 9999;
 }
 
 .side-bar-boxes {
@@ -19,11 +20,15 @@
     color: $secondary-color;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
     
     h2 {
         margin: 0 0.8rem;
     }
+}
+
+.show-button {
+    display: none;
 }
 
 
@@ -54,10 +59,27 @@
     width: 100%;
     background-color: $main-color;
     color: $secondary-color;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
     h3 {
         margin: 0.8rem 0.8rem;
     }
-    cursor: pointer;
+
+    .hide-text {
+        font-size: 0.9rem;
+        margin: 0 0.8rem;
+        opacity: 0;
+        transition: opacity 0.15s ease-in-out;
+    }
+
+    &:hover {
+        .hide-text {
+            opacity: 0.6;
+        }
+    }
 }
 
 .group-box-content {
@@ -92,4 +114,52 @@
    }
     
 }
+@media only screen and (max-width: $breakpoint-1){
+    .show-button {
+        display: block;
+        padding: 0.8rem;
+        font-weight: bold;
+        cursor: pointer;
+        position: relative;
+        width: 1rem;
+        padding-bottom: 1rem;
 
+        transition: all 0.2s ease-in-out;
+
+        svg {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            left: 0;
+            top: 0;
+        }
+    }
+
+    .side-bar {
+        height: 10%;
+        width: 100%;
+        .side-bar-heading { 
+            height: 100%;
+        } 
+    }
+
+    .side-bar.active {
+        height: 100%;
+        
+
+        .side-bar-heading { 
+            height: 10%;
+        } 
+
+        .side-bar-boxes {
+            height: 90%;
+        }
+
+        .show-button {
+            transform: rotateX(180deg);
+        }
+    }
+
+   
+
+}

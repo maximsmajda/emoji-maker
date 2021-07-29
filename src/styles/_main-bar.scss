@@ -9,11 +9,23 @@
 }
 
 .main-bar-heading {
+    margin: 0 3rem;
+    
     h1 {
         font-size: 2.8rem;
-        margin: 0 3rem;
+        margin: 0.4rem 0;
+        
+    }
+
+    .main-bar-made-by {
+        font-size: 0.6rem;
+        a {
+            color: $secondary-color;
+        }
     }
 }
+
+
 
 .main-bar-buttons {
     display: flex;
@@ -41,3 +53,24 @@
 }
 
 
+@media only screen and (max-width: $breakpoint-1){
+    .main-bar {
+        height: 15%;
+    }
+
+    .main-bar-heading {
+        margin: 0 1.1rem;
+        h1 {
+            font-size: 2rem;
+        }
+    }
+
+    .main-bar-buttons {
+        margin: 0 0.8rem;
+        flex-direction: column;
+        p, button {
+            font-size: 1.2rem;
+            margin: 0 0.3rem;
+        }
+    }
+}
