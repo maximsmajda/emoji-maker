@@ -19,12 +19,24 @@ function Emoji({id, onClick, shapes}) {
                     return <path d={att.d} strokeWidth={att.strokeWidth} stroke={att.stroke} fill={att.fill} strokeMiterlimit={att.strokeMiterlimit}/>
                 })
 
+            case 'line':
+                return shape.att.map(att => {
+                    return <line x1={att.x1} x2={att.x2} y1={att.y1} y2={att.y2} strokeWidth={att.strokeWidth} stroke={att.stroke} fill={att.fill} strokeMiterlimit={att.strokeMiterlimit}/>
+                })
+
             case 'ellipse':
                  return shape.att.map(att => {
                     return (
                         <ellipse ry={att.ry} rx={att.rx} cy={att.cy} cx={att.cx} fill={att.fill} stroke={att.stroke} strokeWidth={att.strokeWidth}/>
                     )
                 })
+
+            case 'polygon':
+                return shape.att.map(att => {
+                return (
+                    <polygon fill={att.fill} stroke={att.stroke} strokeWidth={att.strokeWidth} points={att.points}/>
+                )
+            })
                 
             default:
                 return null

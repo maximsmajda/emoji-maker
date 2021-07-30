@@ -22,7 +22,7 @@ function App() {
   const [head, setHead] = useState(null)
   const [eyes, setEyes] = useState(null)
   const [mouth, setMouth] = useState(null)
-  const [ears, setEars] = useState(null)
+  const [moustache, setMoustache] = useState(null)
   const [other, setOther] = useState(null)
   const [eyebrows, setEyebrows] = useState(null)
 
@@ -48,8 +48,8 @@ function App() {
       return setEyes(emoji)
     case 'mouth':
       return setMouth(emoji)
-    case 'ears':
-      return setEars(emoji)
+    case 'moustache':
+      return setMoustache(emoji)
     case 'other':
       return setOther(emoji)
     case 'eyebrows':
@@ -83,7 +83,7 @@ function App() {
         }        
       </SideBar>
       <Preview>
-        <Emoji shapes={[head, eyes, eyebrows, mouth, ears, other]} id="emoji-svg"/>
+        <Emoji shapes={[head, eyes, eyebrows, mouth, moustache, other]} id="emoji-svg"/>
       </Preview>
       <MainBar>
         <p>Save as</p>
