@@ -7,6 +7,7 @@
 
 .side-bar-boxes {
     overflow-y: scroll;
+    overflow-x: hidden;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -105,12 +106,23 @@
     padding-bottom: calc(100%/3);
     cursor: pointer;
 
-   .emoji-box-inside {
-       position: absolute;
-       left: 0;
-       top: 0;
-       width: 100%;
-       height: 100%;
+    
+    
+    
+    .emoji-box-inside {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        
+        transition: all 0.1s ease-in-out;
+
+       &:hover {
+        // background-color: rgb(243, 243, 243);
+        transform: scale(1.05);
+        border-radius: 0.4rem;
+    }
    }
     
 }

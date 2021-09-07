@@ -1,3 +1,5 @@
+import { Helmet } from 'react-helmet'
+
 import SideBar from './components/SideBar'
 import Preview from './components/Preview'
 import MainBar from './components/MainBar'
@@ -6,6 +8,8 @@ import EmojiBox from './components/EmojiBox'
 import Emoji from './components/Emoji'
 
 import { emojis } from './emojis'
+
+import emojiThumbnail from './emoji-maker-thumbnail.png'
 
 import './styles/main.scss'
 import { useState } from 'react'
@@ -64,10 +68,39 @@ function App() {
 
   return (
     <div className="App">
+      <Helmet>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+
+        <html lang="en" />
+        <meta name="author" content="Maxim Smajda" />
+        <meta name="theme-color" content="#1b1b1b" />
+
+        <title>emoji maker</title>
+        <meta name="description" content="Make your own emoji!" />
+        
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://maximsmajda.github.io/emoji-maker/" />
+        <meta property="og:title" content="emoji maker" />
+        <meta property="og:description" content="Make your own emoji!" />
+        <meta property="og:image" content={emojiThumbnail} />
+        
+        <meta property="twitter:card" content="summary_large_image"  />
+        <meta property="twitter:url" content="https://maximsmajda.github.io/emoji-maker/" />
+        <meta property="twitter:title" content="emoji maker" />
+        <meta property="twitter:description" content="Make your own emoji!" />
+        <meta property="twitter:image" content={emojiThumbnail} />        
+
+        <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png" />
+        <link rel="manifest" href="./site.webmanifest" />
+   
+      </Helmet>
+
       <SideBar>        
         {
           Object.keys(emojis).map((category, index) => {
-            console.log(category, index)
             return(
               <GroupBox id={index} name={category}>
                 {

@@ -44,11 +44,13 @@
         border-bottom: 0.2rem solid transparent;
         font-family: 'Roboto Mono', monospace;
         padding: 0;
-        cursor: pointer;
+        
     }
 
     button {
         border-bottom: 0.2rem solid $secondary-color;
+        cursor: pointer;
+        transform: scale(1.05);
     }
 }
 
