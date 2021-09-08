@@ -1,24 +1,23 @@
 {
   "files": {
     "main.css": "/emoji-maker/static/css/main.0a57f272.chunk.css",
-    "main.js": "/emoji-maker/static/js/main.7036caf3.chunk.js",
-    "main.js.map": "/emoji-maker/static/js/main.7036caf3.chunk.js.map",
-    "runtime-main.js": "/emoji-maker/static/js/runtime-main.3b17f5a0.js",
-    "runtime-main.js.map": "/emoji-maker/static/js/runtime-main.3b17f5a0.js.map",
-    "static/js/2.6bad07c5.chunk.js": "/emoji-maker/static/js/2.6bad07c5.chunk.js",
-    "static/js/2.6bad07c5.chunk.js.map": "/emoji-maker/static/js/2.6bad07c5.chunk.js.map",
-    "static/js/3.449d0ffe.chunk.js": "/emoji-maker/static/js/3.449d0ffe.chunk.js",
-    "static/js/3.449d0ffe.chunk.js.map": "/emoji-maker/static/js/3.449d0ffe.chunk.js.map",
+    "main.js": "/emoji-maker/static/js/main.867985b1.chunk.js",
+    "main.js.map": "/emoji-maker/static/js/main.867985b1.chunk.js.map",
+    "runtime-main.js": "/emoji-maker/static/js/runtime-main.2e67b49d.js",
+    "runtime-main.js.map": "/emoji-maker/static/js/runtime-main.2e67b49d.js.map",
+    "static/js/2.73eaf271.chunk.js": "/emoji-maker/static/js/2.73eaf271.chunk.js",
+    "static/js/2.73eaf271.chunk.js.map": "/emoji-maker/static/js/2.73eaf271.chunk.js.map",
+    "static/js/3.30291a7d.chunk.js": "/emoji-maker/static/js/3.30291a7d.chunk.js",
+    "static/js/3.30291a7d.chunk.js.map": "/emoji-maker/static/js/3.30291a7d.chunk.js.map",
     "index.html": "/emoji-maker/index.html",
     "static/css/main.0a57f272.chunk.css.map": "/emoji-maker/static/css/main.0a57f272.chunk.css.map",
-    "static/js/2.6bad07c5.chunk.js.LICENSE.txt": "/emoji-maker/static/js/2.6bad07c5.chunk.js.LICENSE.txt",
-    "static/media/arrow.c13a318f.svg": "/emoji-maker/static/media/arrow.c13a318f.svg",
-    "static/media/emoji-maker-thumbnail.a15957bf.png": "/emoji-maker/static/media/emoji-maker-thumbnail.a15957bf.png"
+    "static/js/2.73eaf271.chunk.js.LICENSE.txt": "/emoji-maker/static/js/2.73eaf271.chunk.js.LICENSE.txt",
+    "static/media/arrow.c13a318f.svg": "/emoji-maker/static/media/arrow.c13a318f.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.3b17f5a0.js",
-    "static/js/2.6bad07c5.chunk.js",
+    "static/js/runtime-main.2e67b49d.js",
+    "static/js/2.73eaf271.chunk.js",
     "static/css/main.0a57f272.chunk.css",
-    "static/js/main.7036caf3.chunk.js"
+    "static/js/main.867985b1.chunk.js"
   ]
 }
