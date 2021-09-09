@@ -6,7 +6,7 @@ export const emojis = {
         {id: 2, name: 'rect', shapeType: 'rect', att: [{strokeWidth: "4", rx: "10", height: "70", width: "70", y: "15", x: "15", stroke: "#000", fill: "#ffd70f"}]},
         {id: 3, name: 'polygon', shapeType: 'polygon', att: [{fill: '#FFD70F', stroke: '#000000', strokeWidth: '4', points: "71.959,11.965 28.041,11.965 6.081,50 28.041,88.035 71.959,88.035 93.919,50"}]},
         {id: 4, name: 'u-shape', shapeType: 'path', att: [{fill: '#FFD70F', stroke: '#000000', strokeWidth: '4', d:"M16.809,88.672h66.382 c0,0,0-34.86,0-41.766S83.069,11.328,50,11.328S16.809,39.153,16.809,46.068S16.809,88.672,16.809,88.672z"}]},
-        {id: 4, name: 'u-shape-reversed', shapeType: 'path', att: [{fill: '#FFD70F', stroke: '#000000', strokeWidth: '4', d:"M83.191,11.328H16.809 c0,0,0,34.86,0,41.766S16.931,88.672,50,88.672s33.191-27.825,33.191-34.741S83.191,11.328,83.191,11.328z"}]},
+        {id: 5, name: 'u-shape-reversed', shapeType: 'path', att: [{fill: '#FFD70F', stroke: '#000000', strokeWidth: '4', d:"M83.191,11.328H16.809 c0,0,0,34.86,0,41.766S16.931,88.672,50,88.672s33.191-27.825,33.191-34.741S83.191,11.328,83.191,11.328z"}]},
 
 
 

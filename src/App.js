@@ -66,13 +66,14 @@ function App() {
     <div className="App">
       <SideBar>        
         {
-          Object.keys(emojis).map((category, index) => {
+          Object.keys(emojis).map((category) => {
+            
             return(
-              <GroupBox id={index} name={category}>
+              <GroupBox key={category} id={category} name={category}>
                 {
                   emojis[category].map((item) => {
                     return(
-                      <EmojiBox><Emoji id={index.toString() + item.id.toString()} shapes={[item]} onClick={() => handleClick(category, item)} /></EmojiBox>
+                      <EmojiBox key={category + item.id}><Emoji key={item.id} id={item.id.toString()} shapes={[item]} onClick={() => handleClick(category, item)} /></EmojiBox>
                     )
                   })
                 }

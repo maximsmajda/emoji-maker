@@ -10,31 +10,31 @@ function Emoji({id, onClick, shapes}) {
                 return 
     
             case 'rect':
-                return shape.att.map(att => {
-                    return <rect strokeWidth={att.strokeWidth} rx={att.rx} height={att.height} width={att.width} y={att.y} x={att.x} stroke={att.stroke} fill={att.fill}/>
+                return shape.att.map((att , key) => {
+                    return <rect key={key} strokeWidth={att.strokeWidth} rx={att.rx} height={att.height} width={att.width} y={att.y} x={att.x} stroke={att.stroke} fill={att.fill}/>
                 })
            
             case 'path':
-                return shape.att.map(att => {
-                    return <path d={att.d} strokeWidth={att.strokeWidth} stroke={att.stroke} fill={att.fill} strokeMiterlimit={att.strokeMiterlimit}/>
+                return shape.att.map((att , key) => {
+                    return <path key={key} d={att.d} strokeWidth={att.strokeWidth} stroke={att.stroke} fill={att.fill} strokeMiterlimit={att.strokeMiterlimit}/>
                 })
 
             case 'line':
-                return shape.att.map(att => {
-                    return <line x1={att.x1} x2={att.x2} y1={att.y1} y2={att.y2} strokeWidth={att.strokeWidth} stroke={att.stroke} fill={att.fill} strokeMiterlimit={att.strokeMiterlimit}/>
+                return shape.att.map((att , key) => {
+                    return <line key={key} x1={att.x1} x2={att.x2} y1={att.y1} y2={att.y2} strokeWidth={att.strokeWidth} stroke={att.stroke} fill={att.fill} strokeMiterlimit={att.strokeMiterlimit}/>
                 })
 
             case 'ellipse':
-                 return shape.att.map(att => {
+                 return shape.att.map((att , key) => {
                     return (
-                        <ellipse ry={att.ry} rx={att.rx} cy={att.cy} cx={att.cx} fill={att.fill} stroke={att.stroke} strokeWidth={att.strokeWidth}/>
+                        <ellipse key={key} ry={att.ry} rx={att.rx} cy={att.cy} cx={att.cx} fill={att.fill} stroke={att.stroke} strokeWidth={att.strokeWidth}/>
                     )
                 })
 
             case 'polygon':
-                return shape.att.map(att => {
+                return shape.att.map((att , key) => {
                 return (
-                    <polygon fill={att.fill} stroke={att.stroke} strokeWidth={att.strokeWidth} points={att.points}/>
+                    <polygon key={key} fill={att.fill} stroke={att.stroke} strokeWidth={att.strokeWidth} points={att.points}/>
                 )
             })
                 
